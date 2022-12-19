@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC73B69D2950A5F100F06636 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC73B69C2950A5F100F06636 /* Register.storyboard */; };
 		DC7584D2295087D1008D6C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7584D1295087D1008D6C33 /* AppDelegate.swift */; };
 		DC7584D4295087D1008D6C33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7584D3295087D1008D6C33 /* SceneDelegate.swift */; };
 		DC7584D6295087D1008D6C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7584D5295087D1008D6C33 /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		DC7584DC295087D1008D6C33 /* PodcastApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC7584DA295087D1008D6C33 /* PodcastApp.xcdatamodeld */; };
 		DC7584DE295087D3008D6C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7584DD295087D3008D6C33 /* Assets.xcassets */; };
 		DC7584E1295087D3008D6C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7584DF295087D3008D6C33 /* LaunchScreen.storyboard */; };
+		DC7584EB2950880D008D6C33 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7584EA2950880D008D6C33 /* Auth.storyboard */; };
+		DC7584ED29508AA2008D6C33 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7584EC29508AA2008D6C33 /* LoginViewController.swift */; };
+		DC7584F82950A568008D6C33 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7584F72950A568008D6C33 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC73B69C2950A5F100F06636 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		DC7584CE295087D1008D6C33 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7584D1295087D1008D6C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC7584D3295087D1008D6C33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		DC7584DD295087D3008D6C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC7584E0295087D3008D6C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC7584E2295087D3008D6C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7584EA2950880D008D6C33 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		DC7584EC29508AA2008D6C33 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DC7584F72950A568008D6C33 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,52 @@
 		DC7584D0295087D1008D6C33 /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC7584E8295087DB008D6C33 /* Modules */,
 				DC7584D1295087D1008D6C33 /* AppDelegate.swift */,
 				DC7584D3295087D1008D6C33 /* SceneDelegate.swift */,
-				DC7584D5295087D1008D6C33 /* ViewController.swift */,
-				DC7584D7295087D1008D6C33 /* Main.storyboard */,
 				DC7584DD295087D3008D6C33 /* Assets.xcassets */,
 				DC7584DF295087D3008D6C33 /* LaunchScreen.storyboard */,
 				DC7584E2295087D3008D6C33 /* Info.plist */,
 				DC7584DA295087D1008D6C33 /* PodcastApp.xcdatamodeld */,
 			);
 			path = PodcastApp;
+			sourceTree = "<group>";
+		};
+		DC7584E8295087DB008D6C33 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DC7584F42950A431008D6C33 /* Register */,
+				DC7584EE29508B23008D6C33 /* Main */,
+				DC7584E9295087E9008D6C33 /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DC7584E9295087E9008D6C33 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DC7584EA2950880D008D6C33 /* Auth.storyboard */,
+				DC7584EC29508AA2008D6C33 /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		DC7584EE29508B23008D6C33 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DC7584D5295087D1008D6C33 /* ViewController.swift */,
+				DC7584D7295087D1008D6C33 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DC7584F42950A431008D6C33 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DC7584F72950A568008D6C33 /* RegisterViewController.swift */,
+				DC73B69C2950A5F100F06636 /* Register.storyboard */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +172,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7584EB2950880D008D6C33 /* Auth.storyboard in Resources */,
 				DC7584E1295087D3008D6C33 /* LaunchScreen.storyboard in Resources */,
 				DC7584DE295087D3008D6C33 /* Assets.xcassets in Resources */,
 				DC7584D9295087D1008D6C33 /* Main.storyboard in Resources */,
+				DC73B69D2950A5F100F06636 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +190,8 @@
 				DC7584D6295087D1008D6C33 /* ViewController.swift in Sources */,
 				DC7584D2295087D1008D6C33 /* AppDelegate.swift in Sources */,
 				DC7584DC295087D1008D6C33 /* PodcastApp.xcdatamodeld in Sources */,
+				DC7584F82950A568008D6C33 /* RegisterViewController.swift in Sources */,
+				DC7584ED29508AA2008D6C33 /* LoginViewController.swift in Sources */,
 				DC7584D4295087D1008D6C33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
